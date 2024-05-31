@@ -9,7 +9,7 @@ Web API para seleccionar los items a APIs externas con tecnicas de mejora de per
 - npm (>= 6.0.0)
 
 ## Installation steps
-- Clona el repositorio `git clone` 
+- Clona el repositorio `git clone https://github.com/MirkoGabriel/ML-Middleend` 
 - Instala dependenciuas `npm install`
 - Correr aplicacion `npm run dev`
 
@@ -17,3 +17,4 @@ Web API para seleccionar los items a APIs externas con tecnicas de mejora de per
 - Importar la coleccion y las variables que se encuentran en `\ML-Middleend\postman` de entorno en postamn
 
 ## API URL
+https://ml-middleend.onrender.com
