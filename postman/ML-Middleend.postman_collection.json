@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "199d084a-79a1-4b26-83e6-780ea1a615b4",
+		"name": "ML-Middleend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30028936"
+	},
+	"item": [
+		{
+			"name": "getItemDetails",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "e962f81a-4d42-4eb3-86cd-a25e7237c8dc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BaseURIMLMiddleend}}/api/items/MLA1119251220",
+					"host": [
+						"{{BaseURIMLMiddleend}}"
+					],
+					"path": [
+						"api",
+						"items",
+						"MLA1119251220"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchItems",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "e962f81a-4d42-4eb3-86cd-a25e7237c8dc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BaseURIMLMiddleend}}/api/search?category=MLA1055&condition=new&site=MLA&limit=3&sort=price_asc",
+					"host": [
+						"{{BaseURIMLMiddleend}}"
+					],
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "MLA1055"
+						},
+						{
+							"key": "condition",
+							"value": "new"
+						},
+						{
+							"key": "site",
+							"value": "MLA"
+						},
+						{
+							"key": "limit",
+							"value": "3"
+						},
+						{
+							"key": "sort",
+							"value": "price_asc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
