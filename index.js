@@ -33,6 +33,7 @@ app.use(loggerMiddleware);
 
 app.use('/api/search', cacheMiddleware, searchRoutes);
 app.use('/api/items', cacheMiddleware, itemsRoutes);
+app.get('/', (req, res) => res.json({ data: 'ML-Middleend API' }));
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
